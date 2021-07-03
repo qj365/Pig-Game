@@ -1,7 +1,6 @@
 'use strict';
 
 //Selecting elements
-console.log(document.querySelector('player--0'));
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
 const score0El = document.getElementById('score--0');
@@ -62,7 +61,6 @@ btnRoll.addEventListener('click', function () {
     if (playing) {
         //randomDice
         const randomDice = Math.trunc(Math.random() * 6 + 1);
-        console.log(randomDice);
 
         //Display dice
         diceEl.classList.remove('hidden');
